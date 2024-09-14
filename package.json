@@ -1,0 +1,22 @@
+{
+  "name": "jidetoken",
+  "version": "1.0.0",
+  "description": "olajides token",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jide",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "ethereumjs-wallet": "^1.0.2",
+    "truffle-wallet-provider": "^0.0.5"
+  }
+}
