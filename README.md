@@ -34,8 +34,8 @@ The OpenZeppelin library includes a lot more than the ERC20 token, but we will o
 ### Write Token Contract
   create a new .sol file inside contracts folder. Name this file JIDEToken, as it matches the token's name.
 
-  [JIDEToken contract](../JIDEToken/contracts/JIDEToken.sol)
-  ![JIDEToken contract](../JIDEToken/docs/assets/jidetoken.png)
+  [JIDEToken contract](./contracts/JIDEToken.sol)
+  ![JIDEToken contract](./docs/assets/jidetoken.png)
 
 
   Our contract is very simple, as it inherits all its functionality from the OpenZeppelin library.
@@ -55,7 +55,7 @@ truffle compile
 
 ### Setup Migration Scripts
 set up a migration script to deploy the JIDEToken contract to the blockchain by creating a new file called "2_deploy_contracts.js", in the JIDEToken/migrations folder.
-[Migration Script for JIDEToken contract](../JIDEToken/migrations/2_deploy_contracts.js)
+[Migration Script for JIDEToken contract](./migrations/2_deploy_contracts.js)
 
 ### Compile Contract
 Before we deploy on one of the Ethereum test networks, let’s start a local
@@ -74,7 +74,7 @@ ganache
 ![Ganache UI](./docs/assets/ganacheui.png)
 
 *⚠️ observation ⚠️*
-1. The network configuration in [Config File](../JIDEToken/truffle-config.js)  includes settings for both the Ganache CLI and User Interface. The only differences between them are the network ID and port number. For more details, refer to the documentation.
+1. The network configuration in [Config File](./truffle-config.js)  includes settings for both the Ganache CLI and User Interface. The only major differences between them are the network ID and port number. For more details, refer to the [documentation](https://archive.trufflesuite.com/docs/ganache/).
 
 ![Truffle Migrate](./docs/assets/truffle-migrate.png)
 
@@ -82,6 +82,6 @@ On the ganache console, we should see that our deployment has created four
 new transactions,
 
 
-![Truffle Migrate](./docs/assets/ganachelog1.png)
-![Truffle Migrate](./docs/assets/ganachelog2.png)
-![Truffle Migrate](./docs/assets/ganachelogfinal.png)
+![ganache 1](./docs/assets/ganachelog1.png)
+![ganache 2](./docs/assets/ganachelog2.png)
+![ganache 3](./docs/assets/ganachelogfinal.png)
