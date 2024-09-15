@@ -143,12 +143,16 @@ module.exports = {
 		// 	port: 8545,
 		// 	gas: 5000000
 		// },
-		ganache: { // Ganache local test RPC blockchain
+		ganache: { 
+      // User Interface
+
+      // Ganache local test RPC blockchain
 			// network_id: "5777",
 			// host: "localhost",
 			// port: 7545,
 			// gas: 6721975,
 
+      // Ganache CLI
       network_id: "1726345551936",
 			host: "localhost",
 			port: 8545,
