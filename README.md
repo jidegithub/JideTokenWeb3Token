@@ -79,7 +79,7 @@ ganache
 ![Truffle Migrate](./docs/assets/truffle-migrate.png)
 
 On the ganache console, we should see that our deployment has created four
-new transactions,
+new transactions showing contract creation and contract call,
 
 
 ![ganache 1](./docs/assets/ganachelog1.png)
