@@ -86,11 +86,18 @@ module.exports = {
     // You should run a client (like ganache, geth, or parity) in a separate terminal
     // tab if you use this network and you must also set the `host`, `port` and `network_id`
     // options below to some value.
-    //
+    
+
     // development: {
     //  host: "127.0.0.1",     // Localhost (default: none)
-    //  port: 8545,            // Standard Ethereum port (default: none)
+    //  port: 7545,            // Standard Ethereum port (default: none)
     //  network_id: "*",       // Any network (default: none)
+    //  gas: 6721975,      // Gas limit
+    //  gasPrice: 20000000000, // 20 Gwei (gas price)
+
+    // //  host: "127.0.0.1",     // Localhost (default: none)
+    // //  port: 8545,            // Standard Ethereum port (default: none)
+    // //  network_id: "*",       // Any network (default: none)
     // },
     //
     // An additional network, but with some advanced options…
@@ -147,16 +154,23 @@ module.exports = {
       // User Interface
 
       // Ganache local test RPC blockchain
+			network_id: "*",
+			host: "127.0.0.1",
+			port: 7545,
+			gas: 6721975,
+      gasPrice: 20000000000,
+
+      // Ganache local test RPC blockchain
 			// network_id: "5777",
 			// host: "localhost",
 			// port: 7545,
 			// gas: 6721975,
 
-      // Ganache CLI
-      network_id: "1726345551936",
-			host: "localhost",
-			port: 8545,
-			gas: 6721975,
+      // // Ganache CLI
+      // network_id: "1726345551936",
+			// host: "localhost",
+			// port: 8545,
+			// gas: 6721975,
 		}
   },
 
@@ -168,7 +182,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.8.20",      // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.8.0",      // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {

@@ -1,4 +1,4 @@
-var JIDEToken = artifacts.require("JIDEToken");
+const JIDEToken = artifacts.require("JIDEToken");
 
 module.exports = function(deployer) {
   // Adjust supply as needed

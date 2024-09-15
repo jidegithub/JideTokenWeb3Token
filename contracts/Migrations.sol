@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.0;
 
 contract Migrations {
   address public owner;
@@ -20,6 +20,14 @@ contract Migrations {
   }
 
   function upgrade(address new_address) public onlyOwner {
+    require(new_address != address(0), "Invalid address");
+    
+    uint32 size;
+    assembly {
+      size := extcodesize(new_address)
+    }
+    require(size > 0, "Address is not a contract");
+
     Migrations upgraded = Migrations(new_address);
     upgraded.setCompleted(last_completed_migration);
   }
