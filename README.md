@@ -1,4 +1,4 @@
-# JIDEToken Creation
+# JIDEToken(An ERC20 compactible Token) Creation
 ## Create and Initialize a Truffle project directory
 
 ```bash
